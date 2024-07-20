@@ -31,9 +31,31 @@ mixin Reproduce {
 }
 
 class Human with Walk, Talk, Reproduce {
-  canWalk = true;
+  @override
+  void walk() {
+    // TODO: implement walk
+    super.canWalk = true;
+    super.walk();
+  }
+
+  @override
+  void talk() {
+    // TODO: implement talk
+    super.canTalk = true;
+    super.talk();
+  }
+
+  @override
+  void reproduce() {
+    // TODO: implement reproduce
+    super.canReproduce = true;
+    super.reproduce();
+  }
 }
+
 void main() {
   Human h = Human();
-  
+  h.walk();
+  h.talk();
+  h.reproduce();
 }
