@@ -28,6 +28,8 @@ class Mathematics {
   //int numerator = 0;
   //int denominator = 0;
 
+// Adding _ makes the variable private
+
   int _ntr = 0;
   int _dtr = 0;
 
