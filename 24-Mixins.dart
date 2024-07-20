@@ -58,4 +58,7 @@ void main() {
   h.walk();
   h.talk();
   h.reproduce();
+
+  int x = int.parse('42)');
+  print(x);
 }
